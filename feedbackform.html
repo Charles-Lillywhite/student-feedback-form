@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+function displayRank(val, id) {
+  document.getElementById(id).innerHTML = val;
+}
+ 
+</script>
+
+<style>
+</style>
+
+</head>
+
+<body>
+  
+  <form>
+    
+    <label for="fname"> First Name: </label> <br>
+    <input type="text" id="fname" name="fname" placeholder="Enter your first name"> <br>
+    
+    <label for="lname"> Last Name: </label> <br>
+    <input type="text" id="lname" name="lname" placeholder="Enter your last name"> <br>
+
+    <label> Email Address: </label><br>
+    <input type="email" id="email" name="email" placeholder="Enter university email"><br>
+
+    <label for="dob"> Date of Birth: </label> <br>
+    <input type="date" id="dob" name="dob"> <br>
+
+    <label for="college"> College: </label> <br>
+    <select id="college" name="college">
+      <option value="Collingwood"> Collingwood </option>
+      <option value="Grey"> Grey </option>
+      <option value="Hatfield"> Hatfield </option>
+      <option value="John Snow"> John Snow </option>
+      <option value="Josephine Butler"> Josephine Butler </option>
+      <option value="South"> South </option>
+      <option value="St. Aidan's"> St. Aidan's </option>
+      <option value="St. Chads"> St. Chads </option>
+      <option value="St. Cuthbert's"> St. Cuthbert's </option>
+      <option value="College of St. Hild & St. Bede"> College of St. Hild & St. Bede </option>
+      <option value="St. John's"> St. John's </option>
+      <option value="St. Mary's"> St. Mary's </option>
+      <option value="Stevenson"> Stevenson </option>
+      <option value="Trevelyan"> Trevelyan </option>
+      <option value="University"> University </option>
+      <option value="Ustinov"> Ustinov </option>
+      <option value="Van Mildert"> Van Mildert </option>
+  </select><br>
+ 
+  <label> Select modules studied: </label><br>
+  <input type="checkbox" id="module-4241" name="modules" value="PHYS4241">
+  <label for="module-4241"> Theoretical Physics </label><br>
+  <input type="checkbox" id="module-4141" name="modules" value="PHYS4141">
+  <label for="module-4141"> Advanced Theoretical Physics </label><br>
+  <input type="checkbox" id="module-4271" name="modules" value="PHYS4271">
+  <label for="module-4271"> Condensed Matter Physics </label><br>
+  <input type="checkbox" id="module-4151" name="modules" value="PHYS4151">
+  <label for="module-4151"> Advanced Condensed Matter Physics </label><br>
+  <input type="checkbox" id="module-4181" name="modules" value="PHYS4181">
+  <label for="module-4181"> Particle Theory </label><br>
+  <input type="checkbox" id="module-4201" name="modules" value="PHYS4201">
+  <label for="module-4201"> Theoretical Astrophysics </label><br>
+  <input type="checkbox" id="module-4161" name="modules" value="PHYS4161">
+  <label for="module-4161"> Advanced Astrophysics </label><br>
+  <input type="checkbox" id="module-4231" name="modules" value="PHYS4231">
+  <label for="module-4231"> Planets & Cosmology </label>
+  
+  <p> Please respond to the following statements. </p>
+  
+  <p> The overall quality of <b>Lectures</b> was: </p>
+    
+    <input type="radio" id="lec_VP" name="lecture rating" value="Very Poor"> 
+    <label for="lec_VP"> Very Poor </label> 
+    
+    <input type="radio" id="lec_P" name="lecture rating" value="Poor"> 
+    <label for="lec_P"> Poor </label> 
+    
+    <input type="radio" id="lec_A" name="lecture rating" value="Average">
+    <label for="lec_A"> Average </label> 
+     
+    <input type="radio" id="lec_G" name="lecture rating" value="Good">
+    <label for="lec_G"> Good </label> 
+     
+    <input type="radio" id="lec_VG" name="lecture rating" value="Very Good">
+    <label for="lec_VG"> Very Good </label> 
+  
+  <p> The overall quality of <b>Workshops</b> was: </p>
+    
+    <input type="radio" id="ws_VP" name="workshop rating" value="Very Poor"> 
+    <label for="ws_VP"> Very Poor </label> 
+    
+    <input type="radio" id="ws_P" name="workshop rating" value="Poor"> 
+    <label for="ws_P"> Poor </label> 
+    
+    <input type="radio" id="ws_A" name="workshop rating" value="Average">
+    <label for="ws_A"> Average </label> 
+     
+    <input type="radio" id="ws_G" name="workshop rating" value="Good">
+    <label for="ws_G"> Good </label> 
+     
+    <input type="radio" id="ws_VG" name="workshop rating" value="Very Good">
+    <label for="ws_VG"> Very Good </label>
+     
+  <p> I would recommend my course to a prospective student: </p>
+    
+    <input type="radio" id="rec_course_SD" name="course recommendation" value="Strongly Disagree"> 
+    <label for="rec_course_SD"> Strongly Disagree </label> 
+    
+    <input type="radio" id="rec_course_D" name="course recommendation value="Disagree"> 
+    <label for="rec_course_D"> Disagree </label> 
+    
+    <input type="radio" id="rec_course_N" name="course recommendation" value="Neither Agree or Disagree">
+    <label for="rec_course_N"> Neither Agree or Disagree </label> 
+     
+    <input type="radio" id="rec_course_A" name="course recommendation" value="Agree">
+    <label for="rec_course_A"> Agree </label> 
+     
+    <input type="radio" id="rec_course_SA" name="course recommendation" value="Strongly Agree">
+    <label for="rec_course_SA"> Strongly Agree </label>
+
+  <p> I would recommend Durham University to a prospective student: </p>
+    
+    <input type="radio" id="rec_uni_SD" name="uni recommendation" value="Strongly Disagree"> 
+    <label for="rec_uni_SD"> Strongly Disagree </label> 
+    
+    <input type="radio" id="rec_uni_D" name="uni recommendation" value="Disagree"> 
+    <label for="rec_uni_D"> Disagree </label> 
+    
+    <input type="radio" id="rec_uni_N" name="uni recommendation" value="Neither Agree or Disagree">
+    <label for="rec_uni_N"> Neither Agree or Disagree </label> 
+     
+    <input type="radio" id="rec_uni_A" name="uni recommendation" value="Agree">
+    <label for="rec_uni_A"> Agree </label> 
+     
+    <input type="radio" id="rec_uni_SA" name="uni recommendation" value="Strongly Agree">
+    <label for="rec_uni_SA"> Strongly Agree </label>
+
+
+  <div class = "revision_rank_container">
+    <p class="question revision_rank"> Please rank your level of revision for this year's exams (0 = No Revision, 10 = Fully Prepared): </p>  
+    <input type="range" min="0" max="10" value="5" oninput="displayRank(this.value, 'revision_rank_value')"> Revision level = <span id="revision_rank_value"></span>
+  </div>
+
+  <div class = "exam_difficulty_rank_container">
+    <p class="question exam_difficulty_rank"> Please rank your perceived difficulty of this year's exams (0 = Trivial, 10 = Impossible): </p>  
+    <input type="range" min="0" max="10" value="5" oninput="displayRank(this.value, 'exam_difficulty_rank_value')"> Exam Difficulty = <span id="exam_difficulty_rank_value"></span>
+  </div>
+  
+  
+
+  <label for="lec-suggestion"> What could be done to improve <b>lectures</b>? </label><br>
+  <textarea id="lec-suggestion" name="lec-suggestion" placeholder="Enter suggestions"></textarea><br>
+
+  <label for="ws-suggestion"> What could be done to improve <b>Workshops</b>? </label><br>
+  <textarea id="ws-suggestion" name="ws-suggestion" placeholder="Enter suggestions"></textarea><br>
+
+</form>
+  
+
+</body>
+
+</html>
